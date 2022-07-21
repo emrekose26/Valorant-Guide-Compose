@@ -7,7 +7,7 @@ import com.squareup.moshi.JsonClass
 @JsonClass(generateAdapter = true)
 data class AgentsResponse(
     @Json(name = "data")
-    val `data`: List<Data?>?,
+    val agentsData: List<Data?>?,
     @Json(name = "status")
     val status: Int?
 )

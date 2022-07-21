@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.emrekose.valorantguide">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".ValorantGuideApp"
         android:allowBackup="true"

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ValorantGuide</string>
+    <string name="generic_error">Something went wrong</string>
 </resources>
