@@ -10,6 +10,8 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
+import com.emrekose.valorantguide.common.extensions.orEmpty
+import com.emrekose.valorantguide.common.extensions.orZero
 
 @Composable
 fun BottomNavBar(navHostController: NavHostController) {
@@ -52,8 +54,8 @@ fun BottomNavBar(navHostController: NavHostController) {
                             }
                         }
                     },
-                    icon = { Icon(painterResource(id = screen.icon), contentDescription = "") },
-                    label = { Text(text = screen.name) },
+                    icon = { Icon(painterResource(id = screen.icon.orZero()), contentDescription = "") },
+                    label = { Text(text = screen.name.orEmpty()) },
                     selected = currentRoute == screen.route
                 )
             }

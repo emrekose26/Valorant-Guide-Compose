@@ -1,4 +1,4 @@
-package com.emrekose.valorantguide.features.maps.domain.model
+package com.emrekose.valorantguide.features.maps.listing.domain.model
 
 data class MapsUiModel(
     val displayName: String?,

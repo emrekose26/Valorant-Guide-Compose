@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">ValorantGuide</string>
     <string name="generic_error">Something went wrong</string>
+    <string name="agents">Agents</string>
+    <string name="maps">Maps</string>
+    <string name="map_detail">Map Detail</string>
+    <string name="weapons">Weapons</string>
 </resources>

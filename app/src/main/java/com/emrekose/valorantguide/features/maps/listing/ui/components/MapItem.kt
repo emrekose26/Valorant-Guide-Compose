@@ -1,4 +1,4 @@
-package com.emrekose.valorantguide.features.maps.ui.components
+package com.emrekose.valorantguide.features.maps.listing.ui.components
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -12,7 +12,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.SubcomposeAsyncImage
 import com.emrekose.valorantguide.common.extensions.orEmpty
-import com.emrekose.valorantguide.features.maps.domain.model.MapsUiModel
+import com.emrekose.valorantguide.features.maps.listing.domain.model.MapsUiModel
 import com.emrekose.valorantguide.ui.components.ValorantGuideProgressBar
 
 @Composable

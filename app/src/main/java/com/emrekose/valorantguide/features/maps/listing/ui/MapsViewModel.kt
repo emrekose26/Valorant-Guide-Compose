@@ -1,4 +1,4 @@
-package com.emrekose.valorantguide.features.maps.ui
+package com.emrekose.valorantguide.features.maps.listing.ui
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
@@ -7,11 +7,9 @@ import androidx.lifecycle.viewModelScope
 import com.emrekose.valorantguide.common.doOnError
 import com.emrekose.valorantguide.common.doOnLoading
 import com.emrekose.valorantguide.common.doOnSuccess
-import com.emrekose.valorantguide.features.maps.domain.usecase.MapsUseCase
+import com.emrekose.valorantguide.features.maps.listing.domain.usecase.MapsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.collect
-import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -22,9 +20,6 @@ class MapsViewModel @Inject constructor(
 
     private val _state = mutableStateOf(MapsState())
     val state: State<MapsState> = _state
-
-    private val _eventFlow = Channel<UiEvent>(Channel.BUFFERED)
-    val eventFlow = _eventFlow.receiveAsFlow()
 
     init {
         getMaps()
@@ -44,9 +39,5 @@ class MapsViewModel @Inject constructor(
                 }
                 .collect()
         }
-    }
-
-    sealed class UiEvent {
-
     }
 }

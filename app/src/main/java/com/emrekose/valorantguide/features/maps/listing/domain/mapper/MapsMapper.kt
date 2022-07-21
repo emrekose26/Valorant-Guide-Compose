@@ -1,8 +1,8 @@
-package com.emrekose.valorantguide.features.maps.domain.mapper
+package com.emrekose.valorantguide.features.maps.listing.domain.mapper
 
 import com.emrekose.valorantguide.common.base.Mapper
 import com.emrekose.valorantguide.data.model.maps.MapsResponse
-import com.emrekose.valorantguide.features.maps.domain.model.MapsUiModel
+import com.emrekose.valorantguide.features.maps.listing.domain.model.MapsUiModel
 import javax.inject.Inject
 
 class MapsMapper @Inject constructor()
