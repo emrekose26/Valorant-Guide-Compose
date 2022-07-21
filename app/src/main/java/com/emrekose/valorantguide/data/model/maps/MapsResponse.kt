@@ -7,7 +7,7 @@ import com.squareup.moshi.JsonClass
 @JsonClass(generateAdapter = true)
 data class MapsResponse(
     @Json(name = "data")
-    val `data`: List<Data?>?,
+    val mapsData: List<Data?>?,
     @Json(name = "status")
     val status: Int?
 )
