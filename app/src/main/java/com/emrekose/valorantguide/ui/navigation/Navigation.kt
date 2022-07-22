@@ -7,7 +7,7 @@ import androidx.navigation.compose.composable
 import com.emrekose.valorantguide.features.agents.ui.AgentsScreen
 import com.emrekose.valorantguide.features.maps.detail.ui.MapDetailScreen
 import com.emrekose.valorantguide.features.maps.listing.ui.MapsScreen
-import com.emrekose.valorantguide.features.weapons.ui.WeaponsScreen
+import com.emrekose.valorantguide.features.weapons.listing.ui.WeaponsScreen
 
 @Composable
 fun Navigation(navController: NavHostController) {
@@ -20,12 +20,12 @@ fun Navigation(navController: NavHostController) {
             MapsScreen(navController)
         }
 
-        composable("${ScreenType.MapDetail.route}/{mapUuid}") {
-            MapDetailScreen()
-        }
-
         composable(ScreenType.Weapons.route) {
             WeaponsScreen()
+        }
+
+        composable("${ScreenType.MapDetail.route}/{mapUuid}") {
+            MapDetailScreen()
         }
     }
 }
