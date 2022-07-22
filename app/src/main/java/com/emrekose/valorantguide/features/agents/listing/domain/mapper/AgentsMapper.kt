@@ -1,8 +1,8 @@
-package com.emrekose.valorantguide.features.agents.domain.mapper
+package com.emrekose.valorantguide.features.agents.listing.domain.mapper
 
 import com.emrekose.valorantguide.common.base.Mapper
 import com.emrekose.valorantguide.data.model.agents.AgentsResponse
-import com.emrekose.valorantguide.features.agents.domain.model.AgentsUiModel
+import com.emrekose.valorantguide.features.agents.listing.domain.model.AgentsUiModel
 import javax.inject.Inject
 
 class AgentsMapper @Inject constructor()
@@ -13,6 +13,7 @@ class AgentsMapper @Inject constructor()
             AgentsUiModel(
                 abilities = agent?.abilities,
                 background = agent?.background,
+                bustPortrait = agent?.bustPortrait,
                 description = agent?.description,
                 displayName = agent?.displayName,
                 fullPortrait = agent?.fullPortrait,

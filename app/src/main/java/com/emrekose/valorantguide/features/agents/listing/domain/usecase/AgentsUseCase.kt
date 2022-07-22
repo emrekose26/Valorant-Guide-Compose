@@ -1,10 +1,10 @@
-package com.emrekose.valorantguide.features.agents.domain.usecase
+package com.emrekose.valorantguide.features.agents.listing.domain.usecase
 
 import com.emrekose.valorantguide.common.Result
 import com.emrekose.valorantguide.common.map
-import com.emrekose.valorantguide.features.agents.domain.mapper.AgentsMapper
-import com.emrekose.valorantguide.features.agents.domain.model.AgentsUiModel
-import com.emrekose.valorantguide.features.agents.domain.repository.AgentsRepository
+import com.emrekose.valorantguide.features.agents.listing.domain.mapper.AgentsMapper
+import com.emrekose.valorantguide.features.agents.listing.domain.model.AgentsUiModel
+import com.emrekose.valorantguide.features.agents.listing.domain.repository.AgentsRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject

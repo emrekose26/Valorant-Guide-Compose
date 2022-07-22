@@ -8,6 +8,7 @@ sealed class ScreenType(
     val name: String?
 ) {
     object Agents : ScreenType("agents", R.drawable.ic_supervised_user_circle, "Agents")
+    object AgentDetail : ScreenType("agentDetail", null, null)
     object Maps : ScreenType("maps", R.drawable.ic_baseline_map, "Maps")
     object MapDetail: ScreenType("mapDetail", null, null)
     object Weapons : ScreenType("weapons", R.drawable.ic_weapons, "Weapons")

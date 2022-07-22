@@ -6,9 +6,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
@@ -20,7 +18,7 @@ import com.emrekose.valorantguide.ui.components.ValorantGuideTopAppBar
 import com.emrekose.valorantguide.ui.navigation.BottomNavBar
 import com.emrekose.valorantguide.ui.navigation.Navigation
 import com.emrekose.valorantguide.ui.navigation.ScreenType
-import com.emrekose.valorantguide.ui.theme.ValorantFont
+import com.emrekose.valorantguide.ui.theme.DarkBlue
 import com.emrekose.valorantguide.ui.theme.ValorantGuideTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -46,7 +44,7 @@ fun MainContent() {
         topBar = {
             ValorantGuideTopAppBar(
                 title = getToolbarTitle(context, currentRoute),
-                backgroundColor = Color.Black,
+                backgroundColor = DarkBlue,
                 contentColor = Color.White,
                 isNavigationIconVisible = isNavigationIconVisible(currentRoute),
                 onNavigationIconClick = {
@@ -66,6 +64,7 @@ fun MainContent() {
 private fun getToolbarTitle(context: Context, route: String?): String {
     val titleResId = when(route) {
         ScreenType.Agents.route -> R.string.agents
+        "${ScreenType.AgentDetail.route}/{agentUuid}" -> R.string.agent_detail
         ScreenType.Maps.route -> R.string.maps
         "${ScreenType.MapDetail.route}/{mapUuid}" -> R.string.map_detail
         ScreenType.Weapons.route -> R.string.weapons
@@ -76,7 +75,8 @@ private fun getToolbarTitle(context: Context, route: String?): String {
 
 private fun isNavigationIconVisible(currentRoute: String?): Boolean {
     return when(currentRoute) {
-        "${ScreenType.MapDetail.route}/{mapUuid}" -> true
+        "${ScreenType.MapDetail.route}/{mapUuid}",
+        "${ScreenType.AgentDetail.route}/{agentUuid}", -> true
         else -> false
     }
 }

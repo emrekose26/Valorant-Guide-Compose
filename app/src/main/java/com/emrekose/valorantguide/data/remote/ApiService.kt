@@ -1,6 +1,7 @@
 package com.emrekose.valorantguide.data.remote
 
 import com.emrekose.valorantguide.data.model.agents.AgentsResponse
+import com.emrekose.valorantguide.data.model.agents.detail.AgentDetailResponse
 import com.emrekose.valorantguide.data.model.maps.MapsResponse
 import com.emrekose.valorantguide.data.model.maps.detail.MapDetailResponse
 import com.emrekose.valorantguide.data.model.weapons.WeaponsResponse
@@ -12,6 +13,9 @@ interface ApiService {
 
     @GET("agents?isPlayableCharacter=true")
     suspend fun getAgents(): Response<AgentsResponse>
+
+    @GET("agents/{agentUuid}")
+    suspend fun getAgentDetail(@Path("agentUuid") agentUuid: String): Response<AgentDetailResponse>
 
     @GET("maps")
     suspend fun getMaps(): Response<MapsResponse>

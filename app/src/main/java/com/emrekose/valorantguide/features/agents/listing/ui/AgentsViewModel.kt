@@ -1,4 +1,4 @@
-package com.emrekose.valorantguide.features.agents.ui
+package com.emrekose.valorantguide.features.agents.listing.ui
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
@@ -7,7 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.emrekose.valorantguide.common.doOnError
 import com.emrekose.valorantguide.common.doOnLoading
 import com.emrekose.valorantguide.common.doOnSuccess
-import com.emrekose.valorantguide.features.agents.domain.usecase.AgentsUseCase
+import com.emrekose.valorantguide.features.agents.listing.domain.usecase.AgentsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.collect

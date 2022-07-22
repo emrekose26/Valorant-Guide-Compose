@@ -13,6 +13,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import com.emrekose.valorantguide.common.extensions.orEmpty
 import com.emrekose.valorantguide.common.extensions.orZero
+import com.emrekose.valorantguide.ui.theme.DarkBlue
 import com.emrekose.valorantguide.ui.theme.RedOrange
 
 @Composable
@@ -24,7 +25,7 @@ fun BottomNavBar(navHostController: NavHostController) {
     )
     Column {
         BottomNavigation(
-            backgroundColor = Color.Black,
+            backgroundColor = DarkBlue,
             contentColor = RedOrange
         ) {
             val navBackStackEntry by navHostController.currentBackStackEntryAsState()

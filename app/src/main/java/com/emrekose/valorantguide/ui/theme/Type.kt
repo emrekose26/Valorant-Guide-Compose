@@ -18,5 +18,10 @@ val Typography = Typography(
         fontFamily = ValorantFont,
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp
+    ),
+    h2 = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontWeight = FontWeight.Bold,
+        fontSize = 16.sp
     )
 )

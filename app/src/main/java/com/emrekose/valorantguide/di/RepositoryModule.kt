@@ -4,7 +4,7 @@ import com.emrekose.valorantguide.data.remote.ApiService
 import com.emrekose.valorantguide.data.repository.AgentsRepositoryImp
 import com.emrekose.valorantguide.data.repository.MapsRepositoryImp
 import com.emrekose.valorantguide.data.repository.WeaponsRepositoryImp
-import com.emrekose.valorantguide.features.agents.domain.repository.AgentsRepository
+import com.emrekose.valorantguide.features.agents.listing.domain.repository.AgentsRepository
 import com.emrekose.valorantguide.features.maps.listing.domain.repository.MapsRepository
 import com.emrekose.valorantguide.features.weapons.listing.domain.repository.WeaponsRepository
 import dagger.Module
