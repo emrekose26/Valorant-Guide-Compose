@@ -39,7 +39,7 @@ fun ValorantGuideTheme(
         systemUiController.setStatusBarColor(color = Color.Transparent)
         DarkColorPalette
     } else {
-        systemUiController.setStatusBarColor(color = Monza)
+        systemUiController.setStatusBarColor(color = Color.Black)
         LightColorPalette
     }
 

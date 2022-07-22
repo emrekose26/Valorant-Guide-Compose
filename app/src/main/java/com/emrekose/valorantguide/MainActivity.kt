@@ -12,9 +12,11 @@ import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.emrekose.valorantguide.ui.components.ValorantGuideTopAppBar
 import com.emrekose.valorantguide.ui.navigation.BottomNavBar
 import com.emrekose.valorantguide.ui.navigation.Navigation
 import com.emrekose.valorantguide.ui.navigation.ScreenType
@@ -42,18 +44,14 @@ fun MainContent() {
     val currentRoute = navBackStackEntry?.destination?.route
     Scaffold(
         topBar = {
-            TopAppBar(
-                title = { Text(text = getToolbarTitle(context, currentRoute), fontFamily = ValorantFont) },
-                navigationIcon = if (currentRoute == "${ScreenType.MapDetail.route}/{mapUuid}"){
-                    {
-                        IconButton(onClick = { navController.navigateUp() }) {
-                            Icon(
-                                imageVector = Icons.Filled.ArrowBack,
-                                contentDescription = "Back"
-                            )
-                        }
-                    }
-                } else null
+            ValorantGuideTopAppBar(
+                title = getToolbarTitle(context, currentRoute),
+                backgroundColor = Color.Black,
+                contentColor = Color.White,
+                isNavigationIconVisible = isNavigationIconVisible(currentRoute),
+                onNavigationIconClick = {
+                    navController.popBackStack()
+                },
             )
         },
         bottomBar = { BottomNavBar(navController) }
@@ -74,4 +72,11 @@ private fun getToolbarTitle(context: Context, route: String?): String {
         else -> R.string.app_name
     }
     return context.getString(titleResId)
+}
+
+private fun isNavigationIconVisible(currentRoute: String?): Boolean {
+    return when(currentRoute) {
+        "${ScreenType.MapDetail.route}/{mapUuid}" -> true
+        else -> false
+    }
 }

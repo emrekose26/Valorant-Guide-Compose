@@ -44,11 +44,10 @@ fun WeaponItem(
             AsyncImage(
                 model = item?.displayIcon,
                 contentDescription = null,
-                contentScale = ContentScale.FillWidth,
+                contentScale = ContentScale.Inside,
                 modifier = Modifier
-                    .height(80.dp)
-                    .padding(10.dp)
-                    .fillMaxSize()
+                    .fillMaxWidth()
+                    .height(90.dp)
             )
         }
     }

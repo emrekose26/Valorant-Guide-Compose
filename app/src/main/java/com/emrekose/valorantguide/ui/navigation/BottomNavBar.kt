@@ -7,11 +7,13 @@ import androidx.compose.material.Icon
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import com.emrekose.valorantguide.common.extensions.orEmpty
 import com.emrekose.valorantguide.common.extensions.orZero
+import com.emrekose.valorantguide.ui.theme.RedOrange
 
 @Composable
 fun BottomNavBar(navHostController: NavHostController) {
@@ -21,7 +23,10 @@ fun BottomNavBar(navHostController: NavHostController) {
         ScreenType.Weapons
     )
     Column {
-        BottomNavigation {
+        BottomNavigation(
+            backgroundColor = Color.Black,
+            contentColor = RedOrange
+        ) {
             val navBackStackEntry by navHostController.currentBackStackEntryAsState()
             val currentRoute = navBackStackEntry?.destination?.route
             items.forEach { screen ->
