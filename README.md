@@ -20,6 +20,7 @@ Valorant Guide is a sample Android application using [Valorant API](https://valo
 - [Moshi](https://github.com/square/moshi) - A modern JSON library for Kotlin and Java.
 - [Moshi Converter](https://github.com/square/retrofit/tree/master/retrofit-converters/moshi) - A Converter which uses Moshi for serialization to and from JSON.
 - [Coil](https://github.com/coil-kt/coil) - An image loading library for Android.
+- [Accompanist](https://google.github.io/accompanist/) - Accompanist is a group of libraries that aim to supplement Jetpack Compose with features that are commonly required by developers but not yet available.
 - [ExoPlayer](https://exoplayer.dev/) - ExoPlayer is an application level media player for Android.
 
 ## Architecture 🗼
