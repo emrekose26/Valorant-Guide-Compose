@@ -2,16 +2,20 @@
 Valorant Guide is a sample Android application using [Valorant API](https://valorant-api.com/) built with Jetpack Compose
 
 ## Screenshots 📷
-<img src="" width="350"> <img src="" width="350">
+<img src="https://raw.githubusercontent.com/emrekose26/Valorant-Guide-Compose/master/screenshots/agent_listing.png?token=GHSAT0AAAAAABTI2OGSRQMUD5H5BAP22J3EYW6UHIQ" width="350"> <img src="https://github.com/emrekose26/Valorant-Guide-Compose/blob/master/screenshots/agent_detail.png?raw=true" width="350">
 
-<img src="" width="350"> <img src="" width="350">
+<img src="https://github.com/emrekose26/Valorant-Guide-Compose/blob/master/screenshots/map_listing.png?raw=true" width="350"> <img src="https://github.com/emrekose26/Valorant-Guide-Compose/blob/master/screenshots/map_detail.png?raw=true" width="350">
+
+<img src="https://github.com/emrekose26/Valorant-Guide-Compose/blob/master/screenshots/weapons_listing.png?raw=true" width="350"> <img src="https://github.com/emrekose26/Valorant-Guide-Compose/blob/master/screenshots/weapon_detail.png?raw=true" width="350">
+
+<img src="https://github.com/emrekose26/Valorant-Guide-Compose/blob/master/screenshots/weapon_skin_levels_video.png?raw=true" width="350"> 
 
 
 ## Tech Stack 🛠️
 
 - [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.
 - [Jetpack Compose](https://developer.android.com/jetpack/compose) - Declarative and simplified way for UI development. 
-- [Compose Navigation](https://developer.android.com/jetpack/compose/navigation)- The Navigation component provides support for Jetpack Compose applications.
+- [Compose Navigation](https://developer.android.com/jetpack/compose/navigation) - The Navigation component provides support for Jetpack Compose applications.
 - [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html) - For asynchronous programming.
 - [Flow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-flow/) - A cold asynchronous data stream that sequentially emits values and completes normally or with an exception.
 - [Android Architecture Components](https://developer.android.com/topic/libraries/architecture) - Collection of libraries that help you design robust, testable, and maintainable apps.
