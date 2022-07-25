@@ -2,13 +2,13 @@
 Valorant Guide is a sample Android application using [Valorant API](https://valorant-api.com/) built with Jetpack Compose
 
 ## Screenshots 📷
-<img src="https://github.com/emrekose26/Valorant-Guide-Compose/blob/master/screenshots/agent_listing.png?raw=true" width="350"> <img src="https://github.com/emrekose26/Valorant-Guide-Compose/blob/master/screenshots/agent_detail.png?raw=true" width="350">
+<img src="https://github.com/emrekose26/Valorant-Guide-Compose/blob/master/screenshots/agent_listing.png?raw=true" width="280"> <img src="https://github.com/emrekose26/Valorant-Guide-Compose/blob/master/screenshots/agent_detail.png?raw=true" width="280">
 
-<img src="https://github.com/emrekose26/Valorant-Guide-Compose/blob/master/screenshots/map_listing.png?raw=true" width="350"> <img src="https://github.com/emrekose26/Valorant-Guide-Compose/blob/master/screenshots/map_detail.png?raw=true" width="350">
+<img src="https://github.com/emrekose26/Valorant-Guide-Compose/blob/master/screenshots/map_listing.png?raw=true" width="280"> <img src="https://github.com/emrekose26/Valorant-Guide-Compose/blob/master/screenshots/map_detail.png?raw=true" width="280">
 
-<img src="https://github.com/emrekose26/Valorant-Guide-Compose/blob/master/screenshots/weapons_listing.png?raw=true" width="350"> <img src="https://github.com/emrekose26/Valorant-Guide-Compose/blob/master/screenshots/weapon_detail.png?raw=true" width="350">
+<img src="https://github.com/emrekose26/Valorant-Guide-Compose/blob/master/screenshots/weapons_listing.png?raw=true" width="280"> <img src="https://github.com/emrekose26/Valorant-Guide-Compose/blob/master/screenshots/weapon_detail.png?raw=true" width="280">
 
-<img src="https://github.com/emrekose26/Valorant-Guide-Compose/blob/master/screenshots/weapon_skin_levels_video.png?raw=true" width="350"> 
+<img src="https://github.com/emrekose26/Valorant-Guide-Compose/blob/master/screenshots/weapon_skin_levels_video.png?raw=true" width="280"> 
 
 
 ## Tech Stack 🛠️
