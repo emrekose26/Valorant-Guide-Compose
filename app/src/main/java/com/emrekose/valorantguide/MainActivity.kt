@@ -68,6 +68,7 @@ private fun getToolbarTitle(context: Context, route: String?): String {
         ScreenType.Maps.route -> R.string.maps
         "${ScreenType.MapDetail.route}/{mapUuid}" -> R.string.map_detail
         ScreenType.Weapons.route -> R.string.weapons
+        "${ScreenType.WeaponDetail.route}/{weaponUuid}" -> R.string.weapon_detail
         else -> R.string.app_name
     }
     return context.getString(titleResId)
@@ -76,7 +77,8 @@ private fun getToolbarTitle(context: Context, route: String?): String {
 private fun isNavigationIconVisible(currentRoute: String?): Boolean {
     return when(currentRoute) {
         "${ScreenType.MapDetail.route}/{mapUuid}",
-        "${ScreenType.AgentDetail.route}/{agentUuid}", -> true
+        "${ScreenType.AgentDetail.route}/{agentUuid}",
+        "${ScreenType.WeaponDetail.route}/{weaponUuid}" -> true
         else -> false
     }
 }

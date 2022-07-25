@@ -12,6 +12,7 @@ sealed class ScreenType(
     object Maps : ScreenType("maps", R.drawable.ic_baseline_map, "Maps")
     object MapDetail: ScreenType("mapDetail", null, null)
     object Weapons : ScreenType("weapons", R.drawable.ic_weapons, "Weapons")
+    object WeaponDetail : ScreenType("weaponDetail", null, null)
 
     fun withArgs(vararg args: String): String {
         return buildString {

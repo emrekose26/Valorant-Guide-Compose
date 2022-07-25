@@ -8,6 +8,7 @@ import com.emrekose.valorantguide.features.agents.detail.ui.AgentDetailScreen
 import com.emrekose.valorantguide.features.agents.listing.ui.AgentsScreen
 import com.emrekose.valorantguide.features.maps.detail.ui.MapDetailScreen
 import com.emrekose.valorantguide.features.maps.listing.ui.MapsScreen
+import com.emrekose.valorantguide.features.weapons.detail.ui.WeaponDetailScreen
 import com.emrekose.valorantguide.features.weapons.listing.ui.WeaponsScreen
 
 @Composable
@@ -22,7 +23,7 @@ fun Navigation(navController: NavHostController) {
         }
 
         composable(ScreenType.Weapons.route) {
-            WeaponsScreen()
+            WeaponsScreen(navController)
         }
 
         composable("${ScreenType.MapDetail.route}/{mapUuid}") {
@@ -31,6 +32,10 @@ fun Navigation(navController: NavHostController) {
 
         composable("${ScreenType.AgentDetail.route}/{agentUuid}") {
             AgentDetailScreen()
+        }
+
+        composable("${ScreenType.WeaponDetail.route}/{weaponUuid}") {
+            WeaponDetailScreen()
         }
     }
 }

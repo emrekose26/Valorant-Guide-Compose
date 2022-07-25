@@ -6,4 +6,5 @@
     <string name="maps">Maps</string>
     <string name="map_detail">Map Detail</string>
     <string name="weapons">Weapons</string>
+    <string name="weapon_detail">Weapon Detail</string>
 </resources>
